@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<mvc:View controllerName="ui5.colorized.controller.App"
+		  xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc"
+          displayBlock="true">
+	<App>
+		<pages>
+			<Page>
+				<content>
+
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

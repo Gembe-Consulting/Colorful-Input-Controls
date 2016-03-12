@@ -1,0 +1,50 @@
+{
+	"sap.app" : {
+		"_version" : "1.1.0",
+		"id" : "ui5.colorized",
+		"type" : "application",
+		"i18n" : "i18n/messageBundle.properties",
+		"title" : "{{applicationTitelText}}",
+		"description" : "{{applicationDescriptionText}}",
+		"applicationVersion" : {
+			"version" : "0.1.0"
+		},
+
+	},
+	"sap.ui" : {
+		"_version" : "1.1.0",
+		"technology" : "UI5",
+		"deviceTypes" : {
+			"desktop" : true,
+			"tablet" : true,
+			"phone" : true
+		},
+		"supportedThemes" : [
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5" : {
+		"_version" : "1.1.0",
+		"rootView" : "ui5.colorized.view.App",
+		"dependencies" : {
+			"minUI5Version" : "1.30",
+			"libs" : {
+				"sap.m" : {}
+			}
+		},
+		"models" : {
+			"i18n" : {
+				"type" : "sap.ui.model.resource.ResourceModel",
+				"settings" : {
+					"bundleName" : "de.demo.timepicker.i18n.messageBundle"
+				}
+			}
+		},
+		"resources" : {
+			"css" : [{
+					"uri" : "css/style.css"
+				}
+			]
+		}
+	}
+}
